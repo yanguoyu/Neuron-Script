@@ -1,0 +1,35 @@
+{
+  "name": "neuron-script",
+  "version": "0.0.1",
+  "description": "1. Some scripts for `Neuron` to do something in batches.",
+  "main": "index.js",
+  "scripts": {
+    "withdraw-dao": "ts-node ./batch-withdraw-dao/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanguoyu/Neuron-Script.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yanguoyu/Neuron-Script/issues"
+  },
+  "homepage": "https://github.com/yanguoyu/Neuron-Script#readme",
+  "dependencies": {
+    "@nervosnetwork/ckb-sdk-rpc": "0.103.1",
+    "@nervosnetwork/ckb-sdk-utils": "0.103.1",
+    "dotenv": "^16.0.3",
+    "mri": "^1.2.0",
+    "sqlite3": "^5.1.2",
+    "typeorm": "^0.3.10",
+    "undici": "^5.12.0"
+  },
+  "devDependencies": {
+    "@ckb-lumos/lumos": "^0.19.0",
+    "@types/node": "^18.11.9",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  }
+}
