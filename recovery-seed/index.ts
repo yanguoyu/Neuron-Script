@@ -41,7 +41,7 @@ function createWallet(mnemonic: string) {
     ).address
   })
 
-  if (receiving.some(v => v === 'ckb1qzda0cr08m85hc8jlnfp3zer7xulejywt49kt2rr0vthywaa50xwsq2xlhj85d5u6aw9vqq5cxuxl7fgkz9240sz3gwce')) {
+  if (receiving.some(v => v === 'ckb1qzda0cr08m85hc8jlnfp3zer7xulejywt49kt2rr0vthywaa50xwsq2uswwfgfwwwxu6fmgefgh453yeehuqjxsl72yg9')) {
    console.info(`the mnemonic word is ${mnemonic}`)
    return true
   }
