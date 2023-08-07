@@ -4,7 +4,8 @@
   "description": "1. Some scripts for `Neuron` to do something in batches.",
   "main": "index.js",
   "scripts": {
-    "withdraw-dao": "ts-node ./batch-withdraw-dao/index.ts"
+    "withdraw-dao": "ts-node ./batch-withdraw-dao/index.ts",
+    "test": "ts-node ./test/index.ts"
   },
   "repository": {
     "type": "git",
