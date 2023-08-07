@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "withdraw-dao": "ts-node ./batch-withdraw-dao/index.ts",
+    "recovery": "ts-node ./recovery-seed/index.ts",
     "test": "ts-node ./test/index.ts"
   },
   "repository": {
@@ -20,11 +21,16 @@
   "dependencies": {
     "@nervosnetwork/ckb-sdk-rpc": "0.103.1",
     "@nervosnetwork/ckb-sdk-utils": "0.103.1",
+    "@types/elliptic": "6.4.14",
+    "@types/uuid": "8.3.4",
+    "bn.js": "4.12.0",
     "dotenv": "^16.0.3",
+    "elliptic": "6.5.4",
     "mri": "^1.2.0",
     "sqlite3": "^5.1.2",
     "typeorm": "^0.3.10",
-    "undici": "^5.12.0"
+    "undici": "^5.12.0",
+    "uuid": "8.3.2"
   },
   "devDependencies": {
     "@ckb-lumos/lumos": "^0.19.0",

@@ -11,19 +11,22 @@
       "type": "node-terminal"
     },
     {
+      "name": "ts-node Debugger",
       "type": "node",
       "request": "launch",
-      "name": "启动程序",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "program": "${workspaceRoot}/node_modules/ts-node/dist/index.js",
       "args": [
-        "${workspaceRoot}/batch-withdraw-dao/index.ts"
+        "${workspaceRoot}/recovery-seed/index.ts" // 入口文件
       ],
-      "outFiles": [
-        "${workspaceFolder}/**/*.js"
-      ]
+      "runtimeArgs": [
+        "--nolazy",
+        "-r",
+        "ts-node/register"
+      ],
+      "sourceMaps": true, 
+      "cwd": "${workspaceRoot}",
+      "protocol": "inspector",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen"
     }
   ]
 }
